@@ -1,0 +1,171 @@
+:root {
+    --color: rgb(81, 181, 248);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: rgb(8, 3, 91);
+    background: linear-gradient(90deg, rgba(8, 3, 91, 1) 100%, rgba(22, 50, 115, 0.9755252442773985) 100%);
+
+
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--color);
+
+}
+
+header .logo {
+    font-size: 20px;
+}
+
+header .logo h1 {
+    transition: all 2s;
+}
+
+
+header .logo h1:hover {
+    color: rgb(113, 255, 47);
+}
+
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 20px;
+    font-size: 1.2rem;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+header .menu ul li:hover {
+    color: rgb(113, 255, 47);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content h1 {
+    color: var(--color);
+
+}
+
+.content p {
+    color: white;
+    text-align: center;
+}
+
+
+.cont {
+    margin: 20px;
+}
+
+.image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    height: 60vh;
+    width: 40vw;
+}
+
+button {
+    height: 7vh;
+    width: 7vw;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--color);
+    transition: all 2s;
+}
+
+button:hover {
+    background-color: rgb(113, 255, 47);
+}
+
+footer {
+    color: var(--color);
+   font-size: 1.4rem;
+   /* background-color: black; */
+
+}
+
+footer .foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.icon{
+    margin:0 10px 0 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+
+.icon:hover{
+    transform: translateY(50%);
+    color:rgb(113, 255, 47);
+  font-size: 1.7rem;
+
+}
+
+
+@media screen and (max-width:760px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .image img {
+        height: 50vh;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:329px) {
+    .logo {
+        margin: auto;
+    }
+
+    .menu {
+        margin: auto;
+    }
+}
